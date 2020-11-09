@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Filho - Desenvolvedor Front-End</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script>document.documentElement.className += ' js';</script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="container js-scroll">
+      <nav class="menu js-menu">
+        <ul>
+          <li>
+            <a href="#home">home</a>
+          </li>
+          <li>
+            <a href="#sobre-mim">sobre mim</a>
+          </li>
+          <li>
+            <a href="#projetos">projetos</a>
+          </li>
+          <li>
+            <a href="#contato">contato</a>
+          </li>
+        </ul>
+      </nav> <!-- menu -->
+      <main>
+        <h1><div class="rectangle-v"></div>Daniel Filho</h1>
+        <h2>Desenvolvedor Front-End</h2>
+      </main>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/daniel-filho-70ab55138/" target="_blank"><img src="img/icons/linkedin.svg" alt="Linkedin"></a>
+        <a href="https://github.com/danielfilh0" target="_blank"><img src="img/icons/github.svg" alt="Github"></a>
+        <a href="https://www.instagram.com/danielbsf_/?hl=pt-br" target="_blank"><img src="img/icons/instagram.svg" alt="Instagram"></a>
+      </div> <!-- icons -->
+    </header>
+    <section class="sobre-mim container js-scroll" id="sobre-mim">
+      <h1><div class="rectangle-v"></div>sobre-mim</h1>
+      <div class="sobre-mim-content">
+        <img src="img/me.png" alt="Foto">
+        <div class="descricao">
+          <p>Olá, me chamo Daniel Filho. Sou estudante de Ciência da Computação e
+            Desenvolvedor Front-End.</p>
+          <p>Comecei meus estudos em Desenvolvimento Web no início de 2020, e desde então tenho me dedicado bastante pra aprimorar
+            meus conhecimentos na área.</p>
+          <p>HTML5, CSS3, JavaScript e Pré-processador Sass são as tecnologias em que tenho aplicado nos meus atuais projetos.</p>
+        </div> <!-- descricao -->
+      </div> <!-- sobre-mim content -->
+      <div class="skills">
+        <div class="skill-box"><img src="img/icons/html-5.svg" alt="HTML5"><p>HTML5</p></div>
+        <div class="skill-box"><img src="img/icons/css-3.svg" alt="CSS3"><p>CSS3</p></div>
+        <div class="skill-box"><img src="img/icons/js.svg" alt="JavaScript"><p>JavaScript</p></div>
+        <div class="skill-box"><img src="img/icons/sass.svg" alt="Sass"><p>Sass</p></div>
+      </div> <!-- skills -->
+    </section> <!-- sobre-mim -->
+    <section class="projetos container js-scroll" id="projetos">
+      <h1><div class="rectangle-v"></div>projetos</h1>
+      <div class="projetos-content">
+        <div class="imagens js-tabmenu">
+          <img src="img/facebook-clone.jpg" alt="Facebook Clone">
+          <img src="img/animais-fantasticos.jpg" alt="Animais Fantasticos">
+          <img src="img/proffy.jpeg" alt="Proffy">
+          <img src="img/tupac.jpg" alt="Tupac">
+          <img src="img/danki-code.png" alt="DankiCode">
+        </div> <!-- imagens -->
+        <div class="projeto-descricao js-tabcontent">
+          <div class="descricao-single">
+            <h2>Facebook Clone</h2>
+            <p>Tela de login do Facebook recriado a fim de estudos. Esse projeto serviu de revisão para algumas técnicas de posicionamento em CSS e relembrei algumas tags em HTML que são utilizadas para formulários.</p>
+          </div> <!-- descricao-single -->
+          <div class="descricao-single">
+            <h2>Animais Fantásticos</h2>
+            <p>Projeto desenvolvido durante o curso de JavaScript da Origamid. Foi utilizado a técnica mais recente de posicionamento em CSS, denominada Grid Layout, que possibilita uma maior liberdade na hora de posicionar os elementos dentro do site. Além disso, foi utilizado também o pré-processador Sass durante o desenvolvimento do projeto e algumas funções em JavaScript foram aplicadas para uma maior interatividade com o usuário.</p>
+          </div> <!-- descricao-single -->
+          <div class="descricao-single">
+            <h2>Proffy</h2>
+            <p>Projeto desenvolvido durante a Next Level Week 2, evento online da RocketSeat. Neste projeto pude introduzir alguns conceitos de Back-end, aplicando algumas funções com Express.js, framework de aplicações Node.js, e a templating engine Nunjucks.</p>
+          </div> <!-- descricao-single -->
+          <div class="descricao-single">
+            <h2>Tupac Shakur</h2>
+            <p>Este o foi primeiro projeto que desenvolvi sozinho. Deu bastante trabalho, pois como foi o primeiro que desenvolvi por conta própria, eu ainda não estava familiarizado com muitas técnicas de posicionamento, mas foi gratificante ver o resultado final!</p>
+          </div> <!-- descricao-single -->
+          <div class="descricao-single">
+            <h2>DankiCode</h2>
+            <p>Projeto desenvolvido durante o curso de Front-End da DankiCode. Esse projeto foi bem interessante pois foi o primeiro que desenvolvi utilizando o pré-processador Sass.</p>
+          </div> <!-- descricao-single -->
+          <div class="botões js-tabbutton" id="facebook-clone">
+            <a href="https://danielfilh0.github.io/Facebook-Clone/" target="_blank"><button>Deployment</button></a>
+            <a href="https://github.com/danielfilh0/Facebook-Clone" target="_blank"><button>Código-fonte</button></a>
+          </div>
+          <div class="botões js-tabbutton" id="animais-fantasticos">
+            <a href="https://danielfilh0.github.io/animais-fantasticos/" target="_blank"><button>Deployment</button></a>
+            <a href="https://github.com/danielfilh0/animais-fantasticos" target="_blank"><button>Código-fonte</button></a>
+          </div>
+          <div class="botões js-tabbutton" id="proffy">
+            <a href="https://danielfilh0.github.io/proffy/" target="_blank"><button>Deployment</button></a>
+            <a href="https://github.com/danielfilh0/proffy" target="_blank"><button>Código-fonte</button></a>
+          </div>
+          <div class="botões js-tabbutton" id="tupac-shakur">
+            <a href="#" target="_blank"><button disabled>Deployment</button></a>
+            <a href="#" target="_blank"><button disabled>Código-fonte</button></a>
+          </div>
+          <div class="botões js-tabbutton" id="danki-code">
+            <a href="#" target="_blank"><button disabled>Deployment</button></a>
+            <a href="https://github.com/danielfilh0/danki-code" target="_blank"><button>Código-fonte</button></a>
+          </div>
+        </div> <!-- projeto-descricao -->
+      </div> <!-- projetos-content -->
+    </section> <!-- projetos -->
+    <section class="contato container js-scroll" id="contato">
+      <h1><div class="rectangle-v"></div>contato</h1>
+      <p>Ficou interessado no meu trabalho? Entre em contato comigo!</p>
+      <div class="icons-contato">
+        <a href="https://www.linkedin.com/in/daniel-filho-70ab55138/" target="_blank"><img src="img/icons/linkedin.svg" alt="Linkedin"><span>Linkedin</span></a>
+        <a href="https://github.com/danielfilh0" target="_blank"><img src="img/icons/github.svg" alt="Github"><span>Github</span></a>
+        <a href="https://www.instagram.com/danielbsf_/?hl=pt-br" target="_blank"><img src="img/icons/instagram.svg" alt="Instagram"><span>Instagram</span></a>
+        <a href="https://www.gmail.com" target="_blank"><img src="img/icons/email.svg" alt="Email"><span>@danbsilva98@gmail.com</span></a>
+      </div> <!-- icons-contato -->
+    </section> <!-- contato -->
+    <footer>
+      <div class="container">
+        <div class="atribuicoes">
+          <div><p>Ícones feitos por <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></p></div>
+          <div><p>Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></p></div>
+          <div><p> Ícones feitos por <a href="https://www.flaticon.com/br/autores/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></p></div>
+          <p><a href="https://icons8.com/icon/20909/html-5">Html 5 icon by Icons8</a></p>
+          <p><a href="https://icons8.com/icon/21278/css3">CSS3 icon by Icons8</a></p>
+          <p><a href="https://icons8.com/icon/EAUyKy3IwmqM/javascript">Javascript icon by Icons8</a></p>
+          <p><a href="https://icons8.com/icon/QBqFNfPPB2Kx/sass">Sass icon by Icons8</a></p>
+          </div> <!-- atribuicoes -->
+          <p class="copy">Daniel Filho © 2020</p>
+      </div> <!-- container -->
+    </footer>
+   
+  <script src="js/script.js"></script>
+  </body>
+</html>
