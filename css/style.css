@@ -130,44 +130,36 @@ section .skill-box {
     font-weight: bold; }
 section.container.projetos {
   justify-content: space-evenly; }
-section .projeto-descricao {
-  padding: 3rem 0; }
-  section .projeto-descricao p {
-    line-height: 1.5;
-    margin: 2rem 0; }
-  section .projeto-descricao h1 {
-    font-size: 1.7rem; }
-  section .projeto-descricao h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center; }
-    section .projeto-descricao h2::after {
-      content: '';
-      width: 4rem;
-      height: 0.2rem;
-      background-color: #00ADB5;
-      margin-left: 1rem; }
 section .projetos-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
   padding-top: 5rem; }
-  section .projetos-content .imagens {
+  section .projetos-content .projeto-box {
+    background-color: white;
+    font-size: 1rem;
+    margin: 0.5rem; }
+    section .projetos-content .projeto-box img {
+      width: 100rem; }
+  section .projetos-content .projeto-descricao {
+    padding: 3rem 0;
     display: flex;
-    overflow-x: scroll; }
-    section .projetos-content .imagens::-webkit-scrollbar {
-      height: 3rem;
-      margin-top: 1rem; }
-    section .projetos-content .imagens::-webkit-scrollbar-thumb {
-      background: #222831;
-      border-top: 2rem solid #FAF9F8; }
-  section .projetos-content img {
-    width: 50rem;
-    cursor: pointer;
-    transition: .3s; }
-    section .projetos-content img:hover {
-      opacity: .8; }
+    justify-content: center; }
+    section .projetos-content .projeto-descricao p {
+      line-height: 1.5;
+      margin: 2rem 0; }
+    section .projetos-content .projeto-descricao h1 {
+      font-size: 1.7rem; }
+    section .projetos-content .projeto-descricao h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center; }
+      section .projetos-content .projeto-descricao h2::after {
+        content: '';
+        width: 4rem;
+        height: 0.2rem;
+        background-color: #00ADB5;
+        margin-left: 1rem; }
   section .projetos-content .botões {
     display: flex;
     justify-content: flex-end; }
