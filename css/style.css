@@ -123,9 +123,9 @@ section .skill-box {
   height: 18rem;
   background-color: white;
   text-align: center;
-  -webkit-box-shadow: 10px 18px 105px -47px #00adb5;
-  -moz-box-shadow: 10px 18px 105px -47px #00adb5;
-  box-shadow: 10px 18px 105px -47px #00adb5; }
+  -webkit-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75); }
   section .skill-box p {
     font-weight: bold; }
 section.container.projetos {

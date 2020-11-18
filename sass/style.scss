@@ -157,7 +157,7 @@ section {
     height: 18rem;
     background-color: white;
     text-align: center;
-    @include box-shadow-2();
+    @include box-shadow-1();
     p {
       font-weight: bold;
     }
