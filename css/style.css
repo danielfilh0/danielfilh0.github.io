@@ -102,7 +102,8 @@ section .sobre-mim-content {
   display: flex;
   align-items: center; }
   section .sobre-mim-content img {
-    width: 10rem; }
+    width: 10rem;
+    border: 10px solid white; }
   section .sobre-mim-content p {
     line-height: 1.5rem;
     margin-left: 1rem !important; }
