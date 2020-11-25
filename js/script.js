@@ -1,47 +1,8 @@
-function initTabNavigation() {
-  const tabMenu = document.querySelectorAll('.js-tabmenu img');
-  const tabContent = document.querySelectorAll('.js-tabcontent .descricao-single');
-  const tabButton = document.querySelectorAll('.js-tabbutton');
+import ScrollSuave from './modules/scroll-suave.js';
 
-  if(tabMenu.length && tabContent.length && tabButton.length) {
-    tabContent[0].classList.add('ativo');
-    tabButton[0].classList.add('ativo');
-    function activeTabContent(index) {
-      tabContent.forEach((descricaoSingle) => {
-        descricaoSingle.classList.remove('ativo');
-      });
-      tabContent[index].classList.add('ativo');
-    }
-    function activeTabButton(index) {
-      tabButton.forEach((button) => {
-        button.classList.remove('ativo');
-      });
-      tabButton[index].classList.add('ativo');
-      tabButton[index++].classList.add('ativo');
-    }
-    tabMenu.forEach((itemMenu, index) => {
-      itemMenu.addEventListener('click', () => {
-        activeTabContent(index);
-        activeTabButton(index);
-      })
-    });
-  }
-}
-function initScrollSlow() {
-  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
-  function scrollToSection(event) {
-    event.preventDefault();
-    const href = event.currentTarget.getAttribute('href');
-    const section = document.querySelector(href);
-    section.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-  }
-  linksInternos.forEach((link) => {
-    link.addEventListener('click', scrollToSection);
-  });
-}
+const scrollSuave = new ScrollSuave('.menu a[href^="#"]');
+scrollSuave.init();
+
 function initScrollAnimation() {
   const sections = document.querySelectorAll('.js-scroll');
   if (sections.length) {
@@ -61,8 +22,6 @@ function initScrollAnimation() {
     window.addEventListener('scroll', animaScroll);
   }
 }
-initTabNavigation();
-initScrollSlow();
 initScrollAnimation();
 
 
