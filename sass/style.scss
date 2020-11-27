@@ -150,8 +150,6 @@ section {
     align-items: center;
     img {
       width: 10rem;
-      border: 10px solid white;
-      // border-radius: 50%;
     }
     p {
       line-height: 1.5rem;
@@ -193,8 +191,8 @@ section {
   .projetos-content {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 5rem;
-    
     .projeto-box {
       width: 26rem;
       background-color: white;
@@ -202,16 +200,9 @@ section {
       margin: 0.5rem;
       @include box-shadow-1();
       // transition: 0.7s;
-      &:hover {
-        cursor: pointer;
-        // width: 30rem;
-        img {
-          opacity: 0.7;
-        }
-      }
     }
     .projeto-descricao {
-      padding: 3rem 0;
+      padding: 2rem 0;
       display: flex;
       justify-content: center;
       p {
@@ -235,18 +226,16 @@ section {
         }
       }
     }
-    .botões {
+    .botoes {
       display: flex;
-      justify-content: flex-end;
-    }
-    a {
-      font-size: 0.9rem;
+      justify-content: center;
+      padding-bottom: 2rem;
     }
     button {
       font-size: 0.9rem;
       color: white;
       font-weight: bold;
-      margin-left: 3rem;
+      margin: 0 1rem;
       background-color: $color-primary;
       width: 8rem;
       height: 3rem;
@@ -258,6 +247,14 @@ section {
       &:hover {
         background-color: $color-aux;
       }
+    }
+    a {
+      display: block;
+      height: 100%;
+      line-height: 2.8rem;
+      font-size: 0.9rem;
+      color: white;
+      font-weight: 700;
     }
   }
   &.contato {
