@@ -8,22 +8,32 @@
   font-size: 90%; }
 
 body {
-  background-color: #FAF9F8; }
+  background-color: #faf9f8; }
 
-h1, h2, p, a {
+h1,
+h2,
+p,
+a {
   color: #222831; }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Playfair Display', serif; }
 
-p, a {
+p,
+a {
   font-family: 'Montserrat', sans-serif; }
 
-p, span {
+span {
   font-size: 1rem; }
 
 img {
   max-width: 100%; }
+
+p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 1.5rem; }
 
 .container {
   max-width: 1280px;
@@ -34,7 +44,7 @@ img {
   width: 1rem;
   height: 100%;
   margin-right: 1rem;
-  background-color: #00ADB5;
+  background-color: #00adb5;
   display: inline-block; }
 
 h2 {
@@ -74,7 +84,7 @@ header {
     header main .rectangle-h {
       width: 7rem;
       height: 1rem;
-      background-color: #00ADB5;
+      background-color: #00adb5;
       display: inline-block; }
   header .icons {
     display: flex;
@@ -82,10 +92,10 @@ header {
     align-items: flex-end; }
   header img {
     width: 2.5rem;
-    margin: .3rem 0;
-    transition: .3s; }
+    margin: 0.3rem 0;
+    transition: 0.3s; }
     header img:hover {
-      opacity: .9; }
+      opacity: 0.9; }
 
 section.container {
   margin: 5rem auto; }
@@ -94,7 +104,7 @@ section h1 {
   display: flex;
   align-items: center; }
 section .rectangle-v {
-  width: .6rem;
+  width: 0.6rem;
   height: 5rem; }
 section .sobre-mim-content {
   padding: 3rem 0;
@@ -103,30 +113,25 @@ section .sobre-mim-content {
   section .sobre-mim-content img {
     width: 10rem; }
   section .sobre-mim-content p {
+    font-size: 1.5rem;
+    font-weight: lighter;
     line-height: 1.5rem;
     margin-left: 1rem !important; }
   section .sobre-mim-content p + p {
     margin: 0.8rem 0; }
-section .skills {
+section .icons {
+  width: 100%;
   display: flex;
-  justify-content: space-around; }
-  section .skills img {
-    width: 4.5rem;
-    margin-bottom: 1rem; }
-section .skill-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 18rem;
-  height: 18rem;
-  background-color: white;
-  text-align: center;
-  -webkit-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75); }
-  section .skill-box p {
-    font-weight: bold; }
+  justify-content: center; }
+  section .icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  section .icons div + div {
+    margin-left: 2.5rem; }
+  section .icons p {
+    margin-top: 1rem;
+    font-weight: normal; }
 section.container.projetos {
   justify-content: space-evenly; }
 section .projetos-content {
@@ -160,7 +165,7 @@ section .projetos-content {
         content: '';
         width: 4rem;
         height: 0.2rem;
-        background-color: #00ADB5;
+        background-color: #00adb5;
         margin-left: 1rem; }
   section .projetos-content .botoes {
     display: flex;
@@ -171,16 +176,16 @@ section .projetos-content {
     color: white;
     font-weight: bold;
     margin: 0 1rem;
-    background-color: #00ADB5;
+    background-color: #00adb5;
     width: 8rem;
     height: 3rem;
     border: 0;
     outline: none;
     cursor: pointer;
     border-radius: 3rem;
-    transition: .3s; }
+    transition: 0.3s; }
     section .projetos-content button:hover {
-      background-color: #00868C; }
+      background-color: #00868c; }
   section .projetos-content a {
     display: block;
     height: 100%;
@@ -206,13 +211,14 @@ section .icons-contato a + a {
 footer {
   width: 100%;
   padding: 1.2rem 0;
-  background-color: #393E46; }
+  background-color: #393e46; }
   footer .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     color: white; }
-    footer .container p, footer .container a {
+    footer .container p,
+    footer .container a {
       font-weight: 300;
       color: white;
       font-size: 1rem;
@@ -221,7 +227,8 @@ footer {
       text-decoration: underline; }
     footer .container p.copy {
       font-weight: 500; }
-    footer .container .atribuicoes a, footer .container .atribuicoes p {
+    footer .container .atribuicoes a,
+    footer .container .atribuicoes p {
       font-size: 0.7rem; }
 
 .js .js-tabcontent .descricao-single {
@@ -340,11 +347,9 @@ footer {
     .projetos-content .projeto-box {
       width: 35rem !important; }
 
-  .skills {
-    flex-direction: column;
-    align-items: center; }
-    .skills .skill-box {
-      margin: 1rem 0; } }
+  .sobre-mim .icons {
+    justify-content: space-between;
+    font-size: 1rem; } }
 @media screen and (max-width: 400px) {
   * {
     font-size: 55%; } }

@@ -9,11 +9,9 @@
     .projetos-content .projeto-box {
       width: 35rem !important; }
 
-  .skills {
-    flex-direction: column;
-    align-items: center; }
-    .skills .skill-box {
-      margin: 1rem 0; } }
+  .sobre-mim .icons {
+    justify-content: space-between;
+    font-size: 1rem; } }
 @media screen and (max-width: 400px) {
   * {
     font-size: 55%; } }
