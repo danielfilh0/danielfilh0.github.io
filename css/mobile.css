@@ -12,6 +12,12 @@
   .sobre-mim .icons {
     justify-content: space-between;
     font-size: 1rem; } }
+@media screen and (max-width: 768px) {
+  .sobre-mim .icons {
+    flex-wrap: wrap;
+    justify-content: center; }
+    .sobre-mim .icons p {
+      margin-bottom: 1rem; } }
 @media screen and (max-width: 400px) {
   * {
     font-size: 55%; } }
